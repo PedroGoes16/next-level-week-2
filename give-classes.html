@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Sua plataforma de estudos online</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/partials/header.css">
+    <link rel="stylesheet" href="styles/partials/give-classes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body id="page-give-classes"> 
+
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/"><img src="images/icons/back.svg" alt="Voltar"></a>
+                <img src="images/logo.svg" alt="Proffy">
+            </div>
+
+            <div class="header-content">
+                <strong>Que incrível que você quer dar aulas</strong>
+                <p>O primeiro passo, é preencher esse formulário de inscrição</p>
+                
+            </div>
+        </header>
+        <main>
+            <form action="" id="create-class">
+                <fieldset>
+                    <legend>Seus dados</legend>
+                    <div class="input-block">
+                        <label for="name">Nome Completo</label>
+                        <input name="name" id="name" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="avatar">Link da sua foto <small>(comece com https://)</small></label>
+                        <input name="avatar" id="avatar" type="url" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="whatsapp">WhatsApp <small>(somente números)</small></label>
+                        <input name="whatsapp" id="whatsapp" type="number" required>
+                    </div>
+                    <div class="textarea-block">
+                        <label for="bio">Biografia</label>
+                        <textarea name="bio" id="bio" required></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+
+
+</body>
+</html>
