@@ -1,6 +1,6 @@
 const Database = require('./database/db')
 
-const {pageLanding, pageStudy, pageGiveClasses} = require('./page')
+const {pageLanding, pageStudy, pageGiveClasses, saveClasses} = require('./page')
 
 const express = require('express')
 const server = express()
@@ -12,8 +12,10 @@ nunjucks.configure("src/views", {
 })
 
 server
+.use(express.urlencoded({extended: true}))
 .use(express.static("public"))
 .get("/", pageLanding)
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
+.post("/save-classes", saveClasses)
 .listen(5500)
